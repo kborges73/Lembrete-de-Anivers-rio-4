@@ -44,10 +44,10 @@ class _ListarAniversarioState extends State<ListarAniversarios> {
   Widget _buildRow(BuildContext context, Pessoa pessoa) {
     return ListTile(
       title: Text(pessoa.nome!),
-      // onTap: () {
-      //   Navigator.pushReplacementNamed(context, DetalharAniversario.nomeRota,
-      //       arguments: {pessoa});
-      // },
+      onTap: () {
+        Navigator.pushReplacementNamed(context, DetalharAniversario.nomeRota,
+            arguments: {pessoa});
+      },
     );
   }
 
